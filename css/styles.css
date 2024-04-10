@@ -1,3 +1,128 @@
 * {
     font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+html, body {
+    height: auto;
+    min-height: 100vh;
+}
+
+html {
+    background: radial-gradient(circle, rgba(60,92,255,1) 0%, rgba(87,248,255,1) 100%);
+}
+
+#main-container {
+    max-width: 900px;
+    min-height: 80vh;
+    margin: 2rem auto;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#banner {
+    background: url('../img/segurança2.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+}
+
+#banner-layer {
+    background-color: rgba(45, 37, 102, 0.7);
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+#banner-layer h1 {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #fff;
+}
+
+#pass-generator-form {
+    width: 50%;
+    background-color: #fdfdfd;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#text {
+    margin-bottom: 30%;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+#text span {
+    color: #00f;
+}
+
+#content-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#generator-container {
+    border: 1px solid #0097ff;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 0.6rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+#generator-container p {
+    color: #81d340;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+#mais-opcoes {
+    text-align: right;
+    font-weight: bold;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: 0.4s;
+    margin-bottom: 0.5rem;
+}
+
+#mais-opcoes:hover {
+    color: #0097ff;
+}
+
+#opcoes {
+    border: 1px solid #0097ff;
+    border-radius: 4px;
+    height: 20vh;
+}
+
+#gerar-senha {
+    background-color: #81d340;
+    color: #fff;
+    opacity: 0.8;
+    border: 1px solid #589427;
+    border-radius: 2rem;
+    padding: 1rem 4rem;
+    max-width: 250px;
+    cursor: pointer;
+    transition: 0.4s;
+    margin: 1rem auto;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#gerar-senha:hover {
+    opacity: 1;
+}
+
+.hide {
+    display: none;
 }

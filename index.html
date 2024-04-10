@@ -17,21 +17,24 @@
     <div id="main-container">
         <div id="banner">
             <div id="banner-layer">
-                <h1>Gerador de senhas fortes e aleatórias</h1>
+                <h1>Gerador de senhas aleatórias</h1>
             </div>
         </div>
         <div id="pass-generator-form">
-            <p>
-                 Para gerar sua senha basta clicar em 'Gerar senha' ou caso preferir pode selecionar mais opções
+            <p id="text">
+                Para gerar sua senha basta clicar em <span>'Gerar senha'</span> ou caso preferir pode selecionar mais opções
                 de como gostaria que sua senha fosse gerada.
             </p>
-            <div class="generator-container">
-                <p>Sua senha:</p>
-                <h4></h4>
-                <span id="mais-opcoes">Mais opções</span>
-                <div id="opcoes">
-                    
+            <div id="content-container">
+                <div id="generator-container">
+                    <p>Sua senha:</p>
+                    <h4></h4>
                 </div>
+                <span id="mais-opcoes">Mais opções</span>
+                <div id="opcoes" class="hide">
+    
+                </div>
+                <button type="submit" id="gerar-senha">Gerar senha</button>
             </div>
         </div>
     </div>
