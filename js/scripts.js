@@ -18,11 +18,38 @@ const getNumber = () => {
 
 const getSymbol = () => {
     const symbols = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
-    let password = "";
     return symbols[Math.floor(Math.random() * symbols.length)];
+};
+
+const generatePassword = (getLetterLowerCase, getLetterUperCase, getNumber, getSymbol) => {
+    let password = "";
+    const passwordLength = 10;
+
+    const generators = [
+        getLetterLowerCase,
+        getLetterUperCase,
+        getNumber,
+        getSymbol,
+    ];
+    
+    for (let i = 0; i < passwordLength; i = i + 4) {
+        generators.forEach(() => {
+            const randomValue = generators[Math.floor(Math.random() * generators.length)]();
+
+            password += randomValue;
+        });
+    }
+
+    password = password.slice(0, passwordLength);
+
+    generatedPasswordElement.computedStyleMap.display = "block";
+    generatedPasswordElement.querySelector("h4").innerText = password;
 };
 
 // Eventos
 generatePasswordBtn.addEventListener("click", () => {
-    console.log(getLetterLowerCase(), getLetterUperCase(), getNumber(), getSymbol());
+    generatePassword(getLetterLowerCase, getLetterUperCase, getNumber, getSymbol);
 });
+
+// Carregamento inicial
+console.log(generatePassword(getLetterLowerCase, getLetterUperCase, getNumber, getSymbol));
