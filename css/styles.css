@@ -79,6 +79,10 @@ html {
     margin-bottom: 0.5rem;
 }
 
+#generator-container h4{
+    overflow-wrap: break-word;
+}
+
 #generator-container p {
     color: #81d340;
     margin-bottom: 0.5rem;
