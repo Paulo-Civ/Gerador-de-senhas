@@ -52,4 +52,4 @@ generatePasswordBtn.addEventListener("click", () => {
 });
 
 // Carregamento inicial
-console.log(generatePassword(getLetterLowerCase, getLetterUperCase, getNumber, getSymbol));
+generatePassword(getLetterLowerCase, getLetterUperCase, getNumber, getSymbol);

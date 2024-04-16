@@ -99,9 +99,10 @@ html {
 }
 
 #opcoes {
-    border: 1px solid #0097ff;
+    border: 1px solid #ddd;
     border-radius: 4px;
-    height: 20vh;
+    padding: 0.5rem;
+    font-size: 0.8rem;
 }
 
 #gerar-senha {
@@ -125,4 +126,40 @@ html {
 
 .hide {
     display: none;
+}
+
+#opcoes p {
+    padding: 0.5rem 0 1.5rem 0;
+    text-align: center;
+    color: #c6c6c6;
+    font-weight: bold;
+}
+
+#opcoes .form-control {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    font-weight: bold;
+}
+
+#opcoes input[type="text"] {
+    max-width: 30px;
+    text-align: center;
+}
+
+#copy-password {
+    background-color: #81d340;
+    color: #fff;
+    opacity: 0.8;
+    border: 1px solid #589427;
+    border-radius: 2rem;
+    padding: 0.3rem 0.5rem;
+    cursor: pointer;
+    transition: 0.4s;
+    margin: 1rem auto;
+    font-weight: bold;
+}
+
+#copy-password:hover {
+    opacity: 1;
 }
